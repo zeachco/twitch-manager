@@ -8,6 +8,7 @@ import * as $api_joke from "./routes/api/joke.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $oauth_twitch from "./routes/oauth/twitch.ts";
+import * as $ConnectedUsers from "./islands/ConnectedUsers.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -21,6 +22,7 @@ const manifest = {
     "./routes/oauth/twitch.ts": $oauth_twitch,
   },
   islands: {
+    "./islands/ConnectedUsers.tsx": $ConnectedUsers,
     "./islands/Counter.tsx": $Counter,
   },
   baseUrl: import.meta.url,
