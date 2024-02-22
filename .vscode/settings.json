@@ -16,5 +16,7 @@
   },
   "css.customData": [
     ".vscode/tailwind.json"
-  ]
+  ],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
 }
